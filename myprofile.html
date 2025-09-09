@@ -1,0 +1,171 @@
+<html>
+<head>
+<style> 
+*{margin:0;padding:0;box-sizing:border-box}
+
+header
+{background: #222;   color: #f6f0f0;  padding: 15px 40px;  position: sticky;  top: 0;z-index:1000;display:flex; justify-content: space-between; align-items: center;}
+
+header h1   {font-size:22px;}
+
+nav ul{list-style:none;display:flex; gap:20px;}
+
+nav ul li a{color:#79a2d3;text-decoration:none;font-weight:bold;transition:color0.3s;}
+
+nav ul li a:hover{color:#000aafff}
+
+.hero
+{height:90vh;background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('images/back.png');display:flex;flex-direction:column;justify-content: center;align-items: center;text-align: center;color:white;padding: 0 20px;}
+
+.hero h2{font-size: 48px;margin-bottom: 20px;}
+
+.hero button{padding: 12px 25px;border: none;background:rgb(224, 125, 125);color: white;font-size: 18px; border-radius: 5px;cursor: pointer;}
+
+.hero button:hover{background: #c66c18;}
+
+section {padding: 60px 40px;}    /*section styling */
+h2.section-title
+{text-align: center;font-size: 32px; margin-bottom: 40px;}
+
+.about
+{display: flex;align-items: center;justify-content: center;gap:40px;flex-wrap: wrap;}
+
+.about img
+{width: 50%;border-radius:50%;align-items: left;}
+
+.about-text
+{width: 50%;text-align: right;}
+
+.skills
+{display: grid;grid-template-columns: repeat(auto-fit ,minmax(150,1fr));gap: 20px;text-align: center;}
+
+.skills div
+{ border-radius: 8px; padding:20px;transition:transform 0.3s ; background:#f5f5f5; }
+
+.skills div:hover
+{ transform: scale(1.05);}
+
+.project
+{ display: grid; grid-template-columns:repeat(auto-fit ,minmax(250,1fr));gap: 20px;   }
+
+.project-card
+{   background:#f5f5f5; border-radius:8px;
+overflow: hidden;transition: transform 0.3s; }
+
+.project-card img
+{   width: 100%;height: 150px;object-fit: cover }
+
+.project-card:hover
+{  transform:translateY(-5px); }
+
+.project-card h3
+{  padding:10px; }
+
+.project-card p
+{  padding: 0 10px 20px; }
+
+.contact input, .contact textarea
+{padding: 10px;border: 1px solid #ccc;border-radius: 5px; width: 100%;}
+
+.contact button
+{    padding: 10px; background:#00aaff;color: white; border-radius: 5px;border: none;cursor:pointer;transition: 0.3s;}
+
+.contact button:hover
+{background: #131e23;}
+
+.footer{background: #222;color:white ;text-align: center;padding: 20px;margin-top: 40px; text-align: center;}
+
+footer a
+{color: #00aaff;margin: 0 10px;text-decoration: none;transition: 0.3s;text-align: center;}
+
+footer a:hover
+{color:#fff;}
+
+@media(max-width:768px){.hero h2{font-size: 32px;}
+header h1{font-size: 18px;}}
+
+</style>
+<title></title></head>
+<body>
+<header>
+<h1>MY PROFILE</h1>
+<nav><ul>
+<li><a href="#hero">HOME</a></li>
+<li><a href="#about">ABOUT</a></li>
+<li><a href="#skills">SKILLS</a></li>
+<li><a href="#project">PROJECT</a></li>
+<li><a href="#contact">CONTACT</a></li>
+</ul></nav>
+</header>
+
+<section class="hero" id="hero">
+    <h2>Welcome to my portfolio</h2>
+    <button>GET STARTED</button>
+</section>
+
+<section id="about" >
+   <h2 class="section-class">ABOUT ME</h2>
+   <div class="about img">
+    <img src="images\me.png" alt="profile photo">
+    </div>
+    <div class="about-text">
+        <h5>this is me the software developer</h5>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class ="section-title">SKILLS</h2>
+    <div class="skills">
+        <div><img src="images/html.png" width="50"><p>HTML</p></div>
+        <div><img src="images/css.png" width="50"><p>CSS</p></div>
+        <div><img src="images/javascript.png" width="50"><p>JAVASCRIPT</p></div>
+        <div><img src="images/Python.png" width="50"><p>PYTHON</p></div>
+    </div>
+</section>
+
+<section id="project">
+    <h2 class ="section-title">PROJECT</h2>
+    <div class="project">
+        <div class="project-card">
+            <img src ="images\project.png" alt="project1">
+            <h3>PROJECT 1 </h3>
+            <p>A WEBSITE THAT SHOWCASE MY WEBDESIGN SKILLS.</p>
+        </div>
+    </div>
+
+    </div>
+        <div class="project">
+        <div class="project-card">
+            <img src ="images\project.png" alt="project1">
+            <h3>PROJECT 1 </h3>
+            <p>A WEBSITE THAT SHOWCASE MY WEBDESIGN SKILLS.</p>
+        </div>
+    </div>
+
+        <div class="project">
+        <div class="project-card">
+            <img src ="images\project.png" alt="project1">
+            <h3>PROJECT 1 </h3>
+            <p>A WEBSITE THAT SHOWCASE MY WEBDESIGN SKILLS.</p>
+        </div>
+    </div>
+</section>
+<section id="contact"  class="contact">
+    <h2 class="section-title">CONTACT ME</h2>
+    <form>
+        <input type="text" placeholder="your name " required>
+        <input type="email" placeholder="your email " required>
+        <textarea type="text" placeholder="your message " required></textarea>
+        <button type="submit">SEND</button>
+    </form>
+</section>
+
+<footer>
+    <p >@ 2025 my profile |connect with me:</p>
+    <a href="#">LINKDEN</a>
+    <a href="#">GITHUB</a>
+    <a href="#">TWITTER</a>
+
+</footer>
+</body>
+</html>
