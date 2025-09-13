@@ -1,7 +1,72 @@
 <html>
-    <head><title></title></head>
+    <head><title></title>
+    <link rel="stylesheet" type="text/css" href="practice of css/cs10_9_25.css"></head>
     <body>
-       
+    <h1 class="main-header">HTML Advanced Elements Demo</h1>
+
+    <section>
+        <h2 class="section-header">
+            Iframe Example
+        </h2>
+        <p> Below is an iframe embedding in Google:</p><iframe src="https://example.com"  class="custom-iframe" title="Example Iframe"> </iframe></p>
+    </section>
+
+    <section>
+        <h2 class="section-header">
+        Audio Example</h2>
+        <p></p>Play a sample audio file:<p>
+        <audio controls>
+    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg" your browser dont support audio controls>
+    </audio>
+    </section>
+
+    <section>
+        <h2 class="section-header">
+        Video Example</h2>
+        <p></p>Watch sample video  file:<p>
+        <video width="400" controls>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4"  type="video/mp4" >your browser dont support video  controls
+        </video>
+    </section>
+
+    <section>
+        <h2 class="section-header">Forms with html5 input </h2>
+        <form action="/submit"
+        method="post" class="styled-form">
+    
+        <label for ="email">
+            Email address:
+        </label>
+        <input type="email" id="email" name="email" placeholder="Enter your email id " required><br><br>
+
+         <label for ="number">
+            Number Input(1-100):
+        </label>
+        <input type="number" id="number" name="number" placeholder="Enter number " min="1" max="100"><br><br>
+
+         <label for ="date">
+            Enter the date:
+        </label>
+        <input type="date" id="date" name="date" ><br><br>
+
+         <label for ="color">
+            Enter color:
+        </label>
+        <input type="color" id="color" name="color" value="#000000"><br><br>
+
+         <label for ="range">
+            Range:
+        </label>
+        <input type="range" id="range" name="range" min="0" max="10"><br><br>
+
+        <label for ="file">
+            File Upload:
+        </label>
+        <input type="file" id="file" name="file" ><br><br>
+        <button type="submit" class="submit-btn">Submit</button>
+
+    </form>
+    </section>
 
     </body>
 </html>
