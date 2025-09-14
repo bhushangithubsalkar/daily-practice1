@@ -1,6 +1,66 @@
 <html>
     <head><title></title></head>
     <body>
-        
+        <header>
+            <h1>Student Registration Portal</h1>
+            Welcome! Please fill in the below to register
+        </header>
+        <nav>
+            <a href="#form"> Form</a>
+            <a href="#media"> Media</a>
+            <a href="#extras"> Extras</a>
+        </nav>
+
+        <section id="form">
+            <h1>Registration Form</h1>
+            <form>
+                <lable for ="name">Full name:</lable>
+                <input  type="text" id ="name" placeholder="Enter your name " minlength="3" pattern="[A-Za-z\s]+"><br>
+
+                <label for="email" >Email: </label>
+                <input type="email" placeholder="example@gmail.com"><br>
+
+                <label for="age" >Age(18 to 60): </label>
+                <input type="date" min="18" max="60"><br>
+
+                <label for="favcolor" >Favourite color: </label>
+                <input type="color" id="favcolor" name="favcolor" ><br>
+
+                <label for="password" >Password: </label>
+                <input type="password" id="password" name="password" placeholder="Min 6 char ,1 digit" pattern="(?=.*\d)(?=.*\[A-Za-z]).{6,}" ><br>
+
+                <label for="resume">Upload Resume: </label>
+                <input type="file" id="resume" name="resume"><br>
+
+                 <label for="Profile">Profile Completion: </label>
+                <progress value="70" max="100"></progress><br>
+
+                 <label for="know">HTML Knowledge Level: </label>
+                <input type="file" id="resume" name="resume">
+            </form>
+        </section> 
+
+        <section id="media">
+            <h1>Learn with media</h1>
+            <h4> Intro video</h4>
+            <article>
+            <video controls width="320">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4"  type="video/mp4" >
+                your browser dont support video  controls
+            </video>
+            </article>
+            <article>
+                <h4> Background Music</h4>
+                <audio controls width="320">
+                    <source src="sample.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+                </audio>
+            </article>
+        </section> 
+
+        <section id="extras">
+            <h1>Extras</h1>
+            <>
+        </section> 
     </body>
 </html>
