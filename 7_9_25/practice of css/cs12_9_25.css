@@ -1,5 +1,5 @@
 *{
-    margine:0;
+    margin:0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -8,7 +8,8 @@ body{
     background: whitesmoke;padding: 20px;
 }
 header,nav,main,section,article,footer{
-    margin-bottom: 10px;padding: 10px;
+    margin-block-end: 10px;
+    padding: 10px;
     border: 1px solid#ddd;
     border-radius: 8px;
     background: #fff;
@@ -20,9 +21,9 @@ nav a{
 h1,h2{color: #339;text-align: center;}
 form label {display: block; margin: 10px 0 5px;}
 form input,form select,form textarea{
-    width: 100%;
+    inline-size: 100%;
     padding: 8px;
-    margin-bottom: 10px;
+    margin-block-end: 10px;
 }
 .inline-example{display: inline;background: pink;}
 .block-example{display: block;background: lightgreen; margin: 5px 0;}
