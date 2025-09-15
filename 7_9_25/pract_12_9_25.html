@@ -1,5 +1,7 @@
 <html>
-    <head><title></title></head>
+    <head><title></title>
+        <link rel="stylesheet" type ="text/css" href="practice of css/cs12_9_25.css">
+    </head>
     <body>
         <header>
             <h1>Student Registration Portal</h1>
@@ -14,7 +16,7 @@
         <section id="form">
             <h1>Registration Form</h1>
             <form>
-                <lable for ="name">Full name:</lable>
+                <label for ="name">Full name:</label>
                 <input  type="text" id ="name" placeholder="Enter your name " minlength="3" pattern="[A-Za-z\s]+"><br>
 
                 <label for="email" >Email: </label>
@@ -50,17 +52,48 @@
             </video>
             </article>
             <article>
-                <h4> Background Music</h4>
+                <h2> Background Music</h2>
                 <audio controls width="320">
                     <source src="sample.mp3" type="audio/mpeg">
           Your browser does not support audio.
                 </audio>
             </article>
+            <article>
+                <h2>Iframe</h2>
+                <iframe width="320" height="200"  src="https://www.example.com">
+                </iframe>
+            </article>
         </section> 
 
         <section id="extras">
-            <h1>Extras</h1>
-            <>
+            <h2>Extras</h2>
+            <p class="block-exmaple">I am a block element </p>
+            <span class="inline-example">I am a inline element</span>
+            <p style="color:red; font-weight:bold;">This text is styled with inline CSS.</p>
+
+            <!--canvas-->
+            <h3>Canvas Drawing</h3>
+            <canvas id ="MyCanvas"width="200" height="100" style="border:1px solid black;">
+                <script>
+                    const c=document.getElementById("MyCanvas");
+                    const ctr=c.getContext("2d");
+                    ctr.fillStyle="blue";
+                    ctr.fillRect(20,20,250,150);
+                </script>
+            </canvas>
+
+                <!--svg-->
+                <h3>SVG Example</h3>
+                <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow ">
+                </svg>
+                <!--data attribute -->
+            <h3>Data attribute</h3>
+            <button data-role="student" onclick="alert(this.dataset.role)">Click me</button>
+
+            <footer>
+    <p>&copy; 2025 Student Portal Project</p>
+  </footer>
         </section> 
     </body>
 </html>

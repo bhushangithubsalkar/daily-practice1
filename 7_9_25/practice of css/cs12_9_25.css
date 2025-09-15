@@ -1,0 +1,28 @@
+*{
+    margine:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: whitesmoke;padding: 20px;
+}
+header,nav,main,section,article,footer{
+    margin-bottom: 10px;padding: 10px;
+    border: 1px solid#ddd;
+    border-radius: 8px;
+    background: #fff;
+}
+nav a{
+    margin: right 15px;text-decoration: none ;
+    color: #007300;
+}
+h1,h2{color: #339;text-align: center;}
+form label {display: block; margin: 10px 0 5px;}
+form input,form select,form textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+.inline-example{display: inline;background: pink;}
+.block-example{display: block;background: lightgreen; margin: 5px 0;}
