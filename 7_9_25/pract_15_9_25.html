@@ -7,28 +7,66 @@
     <link rel="stylesheet" href="practice of css/cs15_9_25.css">
 </head>
 <body>
-    <div class="sticky-nav">
-        <header class="sticky-nav" role="banner" aria-label="main header">
-            <center><h1 >Community skill swap </h1></center>
-            <p class="lead">
-                Share your skill ,learn from neighbour -swap time not money
-            </p>
-            <nav role="navigation" aria-label="Main Navigation">
-                <a href="#listing">LISTING</a>
-                 <a href="#submit">SUBMIT</a>
-                   <a href="#map">MAP</a>
-            </nav>
+    <div class="c1">
+        <header class="c1a" role="banner" aria-label="Mainheader">
+            <div id="c1i1">
+                <h1>Community Skill swap</h1>
+                <p class="c1b">Share a skill, learn from neighbors — swap time, not money</p>
+                <nav role="navigation" aria-label="Main navigation">
+<a href ="#listing">Listings </a>
+<a href ="#submit">Add a Skill </a>
+<a href ="#map">Find Meetups</a>
+</nav>
+            </div>
+            <div class="c1c" role ="img" aria-label="Colourful hero background"></div>
         </header>
+        <main role="main">
+            <div class="c1d">
+                <section id="c1i2"class="c1e" aria-labelledby="listings-heading">
+                    <h2 id="c1i3">Feature Skill learning </h2>
+                    <ul class="c1f">
+                        <li class="c1g"><h3>Guitar Basics <span class="c1h" data-id="s1" data-type="music">Beginner</span></h3>
+                            <p class="c1i">Offered by: Aman — 1 hour session, neighbourhood park.</p></li>
+                            <li class="c1j" data-id="s2" data-type="gardening"><h3>Urban Gardening<span class="c1k"> Intermediate</span></h3>
+                                <p class="c1l">Offered by: Meera — Tools provided.</p></li>
+
+<li class="c1m" data-type="coding" data-id="s3"><h3>Intro to JavaScript<span class="c1n"> All Levels</span></h3>
+<p class="c1o">Offered by: Priya — Bring a laptop.</p></li>
+</ul>
+<div class="c1p"><button class="c1q" id="c1i4">View more Listing</button></div>
+
+<h4 class="c1q">Upcoming session</h4>
+<table aria-label="Session schedule">
+    <thead><tr><th>Date</th><th>Skill</th><th>Location</th></tr> </thead>
+    <tr><td>2025-10-01</td>
+        <td>Guiter-Basics</td><td>Park A</td></tr>
+     <tr><td>2025-10-05</td>
+        <td>Urban Garderning</td><td>Garden A</td></tr>
+</table>
+<h4 class="c1r"> Meeting map</h4>
+<iframe title="Community Map" src="https://www.openstreetmap.org/export/embed.html?bbox=77.58%2C12.97%2C77.61%2C12.99&layer=mapnik" width="100%" height="220" style="border:1px solid #e6eef6; border-radius:8px;" aria-label="Map showing meetup locations"></iframe>
+                </section>
+            </div>
+        </main>
+
     </div>
 
-    <div id="listing">
-
+    <div id="c2">
+       this is the listing section 
     </div>
 
-    <div id="submit">
-
+    <div id="c3">
+        <h2>Add a Skill(form)</h2>
+       <form>
+        <label for="skill_title">
+            Skill Title
+        </label>
+        <input type="text" placeholder="e.g.,Basic Guiter">
+       </form>
     </div>
 
-    <div id="map"></div>
+    <div id="c4">
+         this is the map setion 
+    </div>
 </body>
 </html>
